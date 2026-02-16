@@ -78,19 +78,19 @@ onlyStudents list =
 
 
 type alias Videogame =
-    { title : String, release : Int, available : Bool, downloads : Int, genres : List String }
+    { title : String, releaseYear : Int, available : Bool, downloads : Int, genres : List String }
 
 
 games : List Videogame
 games =
     [ { title = "Stardew Valley"
-      , release = 1956
+      , releaseYear = 1956
       , available = True
       , downloads = 1655155
       , genres = [ "Action", "Granja", "Cultivar", "Aldeanos" ]
       }
     , { title = "Roblox"
-      , release = 2005
+      , releaseYear = 2005
       , available = False
       , downloads = 845125
       , genres = [ "Action", "Online", "Multijuegos", "Avatar" ]
