@@ -58,11 +58,11 @@ onlyStudents list =
 --Para crear videojuegos tipo .--..-
 
 
-type alias VideoGames =
+type alias Videogame =
     { title : String, release : Int, available : Bool, downloads : Int, genres : List String }
 
 
-games : List VideoGames
+games : List Videogame
 games =
     [ { title = "Stardew Valley"
       , release = 1956
@@ -79,8 +79,8 @@ games =
     ]
 
 
-getVideogamesGenres : List VideoGames -> List (List String)
-getVideogamesGenres list =
+getVideogameGenres : List VideoGames -> List (List String)
+getVideogameGenres list =
     List.map .genres list
 
 
