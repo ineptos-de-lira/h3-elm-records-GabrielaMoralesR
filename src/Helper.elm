@@ -79,7 +79,7 @@ games =
     ]
 
 
-getVideogameGenres : List VideoGames -> List (List String)
+getVideogameGenres : List Videogame -> List (List String)
 getVideogameGenres list =
     List.map .genres list
 
